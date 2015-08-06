@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    
+    
+    <style name="tvTitle" parent="android:Widget.TextView">
+        <item name="android:background">#a40f0207</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="box" parent="tvTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+
+    </style>
+
+    <!--<style name="box.box-red" parent="box">-->
+        <!--<item name="android:background">#ffff0f23</item>-->
+    <!--</style>-->
+
+    <!--<style name="box.box-green" parent="box">-->
+        <!--<item name="android:background">#ff0dff29</item>-->
+    <!--</style>-->
+
+    <!--<style name="box.box-blue" parent="box">-->
+        <!--<item name="android:background">#ff1a32ff</item>-->
+    <!--</style>-->
+
+    <!--<style name="box.box-Lightblue" parent="box">-->
+        <!--<item name="android:background">#ff44ccff</item>-->
+    <!--</style>-->
+</resources>
