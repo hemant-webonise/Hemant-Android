@@ -1,0 +1,5 @@
+/home/webonise/Git/Hemant-Android/UI-Usage/com.weboniselab.hemant.android.assignment2-UI/app/build/intermediates/classes/debug
+/home/webonise/Git/Hemant-Android/UI-Usage/com.weboniselab.hemant.android.assignment2-UI/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-d2ac5a0945088a72997d663120fb304b8090d3d8.jar
+/home/webonise/Git/Hemant-Android/UI-Usage/com.weboniselab.hemant.android.assignment2-UI/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-7f7dab37cbae25f3c7d4c4973577f9727169a55f.jar
+/home/webonise/Git/Hemant-Android/UI-Usage/com.weboniselab.hemant.android.assignment2-UI/app/build/intermediates/pre-dexed/debug/classes-20c08cfaaf830b74f732dfd7da5d5779f61faf8f.jar
+/home/webonise/Git/Hemant-Android/UI-Usage/com.weboniselab.hemant.android.assignment2-UI/app/build/intermediates/pre-dexed/debug/classes-fc74284abb467f2fcb4c492e6662f2e1df26e584.jar

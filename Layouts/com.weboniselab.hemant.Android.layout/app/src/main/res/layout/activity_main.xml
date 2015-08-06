@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background_material_dark">
+
+    <TextView
+        style="@style/tvTitle"
+        android:text="@string/hello_world"
+        android:id="@+id/textView" />
+
+    <TextView
+        style="@style/boxRed"
+        android:id="@+id/etOne"
+        android:text="@string/etOne"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        style="@style/boxRed"
+        android:id="@+id/etTwo"
+        android:text="@string/etTwo"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/etSix"
+        android:layout_toStartOf="@+id/etSix" />
+
+    <TextView
+        style="@style/boxRed"
+        android:id="@+id/etThree"
+        android:text="@string/etThree"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        style="@style/boxGreen"
+        android:id="@+id/etFour"
+        android:text="@string/etFour"
+        android:layout_toLeftOf="@+id/etFive"
+        android:layout_toStartOf="@+id/etFive"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/middle"
+         />
+
+    <TextView
+        style="@style/boxGreen"
+        android:id="@+id/etFive"
+        android:text="@string/etFive"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/middle"/>
+    <TextView
+        style="@style/boxGreen"
+        android:id="@+id/etSix"
+        android:text="@string/etSix"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/etFive"
+        android:layout_toEndOf="@+id/etFive"
+        android:layout_margin="@dimen/middle"/>
+    <TextView
+        style="@style/boxBlue"
+        android:id="@+id/etSeven"
+        android:text="@string/etSeven"
+        android:layout_above="@+id/etEight"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        style="@style/boxLightblue"
+        android:id="@+id/etEight"
+        android:text="@string/etEight"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        />
+
+
+</RelativeLayout>
