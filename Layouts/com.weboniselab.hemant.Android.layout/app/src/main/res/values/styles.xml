@@ -22,19 +22,19 @@
 
     </style>
 
-    <!--<style name="box.box-red" parent="box">-->
-        <!--<item name="android:background">#ffff0f23</item>-->
-    <!--</style>-->
+    <style name="boxRed" parent="box">
+        <item name="android:background">#ffff0f23</item>
+    </style>
 
-    <!--<style name="box.box-green" parent="box">-->
-        <!--<item name="android:background">#ff0dff29</item>-->
-    <!--</style>-->
+    <style name="boxGreen" parent="box">
+        <item name="android:background">#ff0dff29</item>
+    </style>
 
-    <!--<style name="box.box-blue" parent="box">-->
-        <!--<item name="android:background">#ff1a32ff</item>-->
-    <!--</style>-->
+    <style name="boxBlue" parent="box">
+        <item name="android:background">#ff1a32ff</item>
+    </style>
 
-    <!--<style name="box.box-Lightblue" parent="box">-->
-        <!--<item name="android:background">#ff44ccff</item>-->
-    <!--</style>-->
+    <style name="boxLightblue" parent="box">
+        <item name="android:background">#ff44ccff</item>
+    </style>
 </resources>
