@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UI-Demo</string>
+    <string name="hello_world">Webonise Labs!</string>
+    <string name="action_settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="btnFirst">First</string>
+
+    <string name="country_prompt">Choose a country</string>
+    <string name="tvFirstName">First Name</string>
+    <string name="etFristName">First Name</string>
+    <string name="tvLastView">LastName</string>
+    <string name="etLastView">LastName</string>
+    <string name="tvPassword">Password</string>
+    <string name="etPassword">Password</string>
+    <string name="tvEmail">E-mail Address</string>
+    <string name="etEmail">E-mail Address</string>
+    <string name="tvPhone">Phone Number</string>
+    <string name="etPhone">8983766138</string>
+    <string name="rbMale">Male</string>
+    <string name="rbFemale">Female</string>
+    <string name="cbAgree">Agree!</string>
+    <string name="tvSelect">Select your country.</string>
+    <string name="btnSubmit">Submit</string>
+
+
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
+
+    <string name="rbFemaleString">Are you sure, Girl?</string>
+    <string name="rbMaleString">Are you sure, Boy?</string>
+    <string name="btnAgreeS">Are you sure, you Agree!</string>
+    <string name="btnSubmitString">Submitted !</string>
+
+
+</resources>
+
+
