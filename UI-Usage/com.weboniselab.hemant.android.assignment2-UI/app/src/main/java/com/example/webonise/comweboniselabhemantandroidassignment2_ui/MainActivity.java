@@ -44,21 +44,26 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+//  R.string.rbFemaleString was used instead of sending specific  hardcoded string.
     public void radioFemale(View view) {
-        Toast.makeText(getApplicationContext(), "Are you sure, Girl?",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), R.string.rbFemaleString,Toast.LENGTH_LONG).show();
 
     }
 
     public void radioMale(View view) {
-        Toast.makeText(getApplicationContext(), "Are you sure, Boy?",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), R.string.rbMaleString,Toast.LENGTH_LONG).show();
     }
 
     public void checkBoxAgree(View view) {
-        Toast.makeText(getApplicationContext(), "Are you sure, you Agree!",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), R.string.btnAgreeS ,Toast.LENGTH_LONG).show();
     }
+//  Improper way---------------->
+//    public void btnSubmit(View view) {
+//        Toast.makeText(getApplicationContext(), "Submitted !",Toast.LENGTH_LONG).show();
+//    }
 
     public void btnSubmit(View view) {
-        Toast.makeText(getApplicationContext(), "Submitted DUDE!",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), R.string.btnSubmitString,Toast.LENGTH_LONG).show();
     }
 
 

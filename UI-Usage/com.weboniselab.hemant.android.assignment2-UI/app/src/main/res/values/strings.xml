@@ -13,11 +13,11 @@
     <string name="tvLastView">LastName</string>
     <string name="etLastView">LastName</string>
     <string name="tvPassword">Password</string>
-    <string name="evPassword">Password</string>
+    <string name="etPassword">Password</string>
     <string name="tvEmail">E-mail Address</string>
-    <string name="evEmail">E-mail Address</string>
+    <string name="etEmail">E-mail Address</string>
     <string name="tvPhone">Phone Number</string>
-    <string name="evPhone">8983766138</string>
+    <string name="etPhone">8983766138</string>
     <string name="rbMale">Male</string>
     <string name="rbFemale">Female</string>
     <string name="cbAgree">Agree!</string>
@@ -35,6 +35,12 @@
         <item>New Zealand</item>
         <item>India</item>
     </string-array>
+
+
+    <string name="rbFemaleString">Are you sure, Girl?</string>
+    <string name="rbMaleString">Are you sure, Boy?</string>
+    <string name="btnAgreeS">Are you sure, you Agree!</string>
+    <string name="btnSubmitString">Submitted !</string>
 
 
 </resources>
