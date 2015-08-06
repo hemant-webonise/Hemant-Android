@@ -1,0 +1,5 @@
+/home/webonise/AndroidStudioProjects/Hello-world/app/build/intermediates/classes/debug
+/home/webonise/AndroidStudioProjects/Hello-world/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-d2ac5a0945088a72997d663120fb304b8090d3d8.jar
+/home/webonise/AndroidStudioProjects/Hello-world/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-116f358a1101e19f03e19a80dcefb3f53b561d43.jar
+/home/webonise/AndroidStudioProjects/Hello-world/app/build/intermediates/pre-dexed/debug/classes-2b02d1377734faafa235dfec68d90e0491a45a53.jar
+/home/webonise/AndroidStudioProjects/Hello-world/app/build/intermediates/pre-dexed/debug/classes-de2f170c6a4f87409a9f22458f67e360273f01d9.jar
