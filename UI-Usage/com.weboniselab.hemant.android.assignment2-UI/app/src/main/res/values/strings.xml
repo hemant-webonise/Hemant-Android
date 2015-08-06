@@ -8,6 +8,21 @@
     <string name="btnFirst">First</string>
 
     <string name="country_prompt">Choose a country</string>
+    <string name="tvFirstName">First Name</string>
+    <string name="etFristName">First Name</string>
+    <string name="tvLastView">LastName</string>
+    <string name="etLastView">LastName</string>
+    <string name="tvPassword">Password</string>
+    <string name="evPassword">Password</string>
+    <string name="tvEmail">E-mail Address</string>
+    <string name="evEmail">E-mail Address</string>
+    <string name="tvPhone">Phone Number</string>
+    <string name="evPhone">8983766138</string>
+    <string name="rbMale">Male</string>
+    <string name="rbFemale">Female</string>
+    <string name="cbAgree">Agree!</string>
+    <string name="tvSelect">Select your country.</string>
+    <string name="btnSubmit">Submit</string>
 
 
     <string-array name="country_arrays">

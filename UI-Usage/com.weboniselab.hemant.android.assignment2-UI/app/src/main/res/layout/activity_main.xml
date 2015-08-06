@@ -56,7 +56,7 @@
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="First Name"
+                    android:text="@string/tvFirstName"
 
                     android:layout_weight="1"
                     />
@@ -65,7 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="textPersonName"
-                    android:text="First Name"
+                    android:text="@string/etFristName"
 
                     android:layout_weight="1"/>
             </LinearLayout>
@@ -80,7 +80,7 @@
                     android:id="@+id/textView1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="LastName"
+                    android:text="@string/tvLastView"
 
                     android:layout_weight="1"/>
                 <EditText
@@ -89,7 +89,7 @@
                     android:layout_height="match_parent"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="LastName"
+                    android:text="@string/etLastView"
                     android:layout_weight="1"/>
             </LinearLayout>
 
@@ -102,7 +102,7 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Password"
+                    android:text="@string/tvPassword"
 
                     android:layout_weight="1"/>
                 <EditText
@@ -111,7 +111,7 @@
                     android:layout_height="match_parent"
                     android:ems="10"
                     android:inputType="textPassword"
-                    android:text="Password"
+                    android:text="@string/evPassword"
                     android:layout_weight="1"/>
             </LinearLayout>
 
@@ -124,7 +124,7 @@
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="E-mail Address"
+                    android:text="@string/tvEmail"
 
                     android:layout_weight="1"/>
                 <EditText
@@ -133,7 +133,7 @@
                     android:layout_height="match_parent"
                     android:ems="10"
                     android:inputType="textEmailAddress"
-                    android:text="E-mail Address"
+                    android:text="@string/evEmail"
                     android:layout_weight="1"/>
             </LinearLayout>
 
@@ -146,7 +146,7 @@
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Phone Number"
+                    android:text="@string/tvPhone"
 
                     android:layout_weight="1"/>
                 <EditText
@@ -156,7 +156,7 @@
                     android:ems="10"
                     android:inputType="phone"
                     android:layout_weight="1"
-                    android:text="8983766138"/>
+                    android:text="@string/evPhone"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -187,7 +187,7 @@
                     android:id="@+id/radioButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Male"
+                    android:text="@string/rbMale"
                     android:layout_weight="1"
                     android:onClick="radioMale"
                     android:checked="false" />
@@ -197,7 +197,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="right"
-                    android:text="Female"
+                    android:text="@string/rbFemale"
                     android:layout_weight="1"
                     android:onClick="radioFemale" />
 
@@ -209,7 +209,7 @@
                 android:id="@+id/checkBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Agree!"
+                android:text="@string/cbAgree"
                 android:onClick="checkBoxAgree" />
 
 
@@ -217,7 +217,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Select your country."
+                android:text="@string/tvSelect"
                 android:textColor="@color/colorDark"
                 android:id="@+id/textView5" />
 
@@ -233,7 +233,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clickable="true"
-                android:text="Submit"
+                android:text="@string/btnSubmit"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:onClick="btnSubmit" />
