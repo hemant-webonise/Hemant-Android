@@ -1,0 +1,40 @@
+<resources>
+
+
+    <style name="C" parent="C.Base"></style>
+
+    <style name="C.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/background_material_dark</item>
+        <item name="android:textColor">@color/tv_color</item>
+    </style>
+
+
+
+
+    <style name="txt_success">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">26dp</item>
+    </style>
+
+    <style name="txt_check" parent="C.Base">
+
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">26dp</item>
+    </style>
+
+
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base"></style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/tv_color</item>
+        <item name="colorPrimaryDark">@color/tv_color</item>
+    </style>
+
+
+
+</resources>
