@@ -8,10 +8,12 @@
     <string name="et_password">Password</string>
     <string name="Welcome">Welcome , %s</string>
     <string name="User_onValidate">username</string>
-    <string name="usr_stored">Hemant</string>
+    <string name="usr_stored">user</string>
     <string name="pass_stored">12345</string>
     <string name="usr_input">username</string>
     <string name="pass_incorect">Invalid Username password pair.</string>
     <string name="btn_LoginString">LOGIN</string>
+    <string name="err_usrName">Please enter a valid - Username</string>
+    <string name="err_password">Please enter a valid - Password</string>
 
 </resources>
