@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Broadcast</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="etHint">Message update.</string>
+    <string name="btn_String">Receive</string>
+    <string name="no_sms">No message received from last broadcast</string>
+
+</resources>
