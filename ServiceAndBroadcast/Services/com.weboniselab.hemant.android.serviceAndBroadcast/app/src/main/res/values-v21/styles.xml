@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Homepage.Base" parent="Base.AlertDialog.AppCompat.Light">
+        <item name="android:navigationBarColor">@color/link_text_material_light</item>
+
+    </style>
+</resources>

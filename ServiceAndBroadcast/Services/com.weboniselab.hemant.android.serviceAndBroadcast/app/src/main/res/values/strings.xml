@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Services and BroadCast</string>
+    <string name="action_settings">Setting-Menu</string>
+    <string name="service_started">Example Service started</string>
+    <string name="service_label">Example Service Label</string>
+    <string name="btn_startString">Start Service</string>
+    <string name="btn_stopString">Stop Service</string>
+    <string name="btnBindString">Bind to Service</string>
+    <string name="btnUnbindString">Unbind from Service</string>
+    <string name="etSum">Please enter Number</string>
+    <string name="btnAdd">Add</string>
+    <string name="displaySum"><![CDATA[Total----------->]]></string>
+    <string name="errTvempty">Please enter a number!</string>
+
+</resources>
