@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+    <TextView
+        style="@style/filler"
+        android:text="Welcome"
+
+        android:textSize="@dimen/title"/>
+
+    <EditText
+        style="@style/filler"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/etHint"
+        android:id="@+id/et_status"
+        android:minHeight="@dimen/etMInHt"
+        />
+
+    <Button
+        style="@style/filler"
+        android:text="@string/btn_String"
+        android:id="@+id/btn_receiver"
+        android:layout_below="@+id/et_status"
+         />
+</RelativeLayout>
