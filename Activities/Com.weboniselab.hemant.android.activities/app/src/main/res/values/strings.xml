@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Activities</string>
+    <string name="hello_world">Welcome</string>
+    <string name="action_settings">Settings</string>
+    <string name="tv_username">User-Name</string>
+    <string name="et_password">Password</string>
+    <string name="Welcome">Welcome , %s</string>
+    <string name="User_onValidate">username</string>
+    <string name="usr_stored">user</string>
+    <string name="pass_stored">12345</string>
+    <string name="usr_input">username</string>
+    <string name="pass_incorect">Invalid Username password pair.</string>
+    <string name="btn_LoginString">LOGIN</string>
+    <string name="err_usrName">Please enter a valid - Username</string>
+    <string name="err_password">Please enter a valid - Password</string>
+
+</resources>

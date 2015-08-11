@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_Validity" type="id">Some-one!</item>
+    <item name="et_username" type="id" />
+    <item name="et_password" type="id" />
+    <item name="btn_Validation" type="id" />
+</resources>
