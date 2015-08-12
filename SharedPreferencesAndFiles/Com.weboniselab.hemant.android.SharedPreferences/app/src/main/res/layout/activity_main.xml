@@ -1,0 +1,76 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/filler">
+<RelativeLayout
+    style="@style/filler"
+     tools:context=".MainActivity">
+
+    <EditText
+        style="@style/filler"
+        android:hint="@string/inputStingHint"
+        android:id="@+id/et_send"
+        android:minHeight="100dp"/>
+
+    <EditText
+        style="@style/filler"
+        android:hint="Name"
+        android:id="@+id/et_name"
+        android:minHeight="50dp"
+        android:layout_below="@+id/et_send"/>
+
+    <EditText
+        style="@style/filler"
+        android:hint="Height"
+        android:id="@+id/et_ht"
+        android:minHeight="50dp"
+        android:inputType="number"
+        android:layout_below="@+id/et_name"/>
+    <EditText
+        style="@style/filler"
+        android:hint="Weight"
+        android:id="@+id/et_wt"
+        android:minHeight="50dp"
+        android:inputType="number"
+        android:layout_below="@+id/et_ht"/>
+
+
+    <EditText
+        android:id="@+id/et_receive"
+        style="@style/filler"
+        android:hint="@string/displayPrefStringHint"
+        android:minHeight="100dp"
+        android:layout_below="@+id/et_wt"
+         />
+
+    <EditText
+        android:id="@+id/et_receiveFromFile"
+        style="@style/filler"
+        android:hint="@string/displayFileString"
+        android:minHeight="100dp"
+        android:layout_below="@+id/et_receive"
+        />
+
+    <Button
+        style="@style/filler"
+        android:id="@+id/btn_activate"
+        android:text="receive"
+        android:layout_below="@+id/et_receiveFromFile"
+         />
+
+    <Button
+        style="@style/filler"
+        android:id="@+id/btn_FileOpen"
+        android:text="Open-File"
+        android:layout_below="@+id/btn_activate"
+        />
+
+    <Button
+        style="@style/filler"
+        android:id="@+id/btn_SP"
+        android:text="Open-Shared Preferences"
+        android:layout_below="@+id/btn_FileOpen"
+        />
+
+</RelativeLayout>
+</ScrollView>

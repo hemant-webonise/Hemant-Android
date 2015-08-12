@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SharedPreferences</string>
+    <string name="action_settings">Settings</string>
+    <string name="inputStingHint">Put Text to be send to Shared-Preferences and file-system</string>
+    <string name="displayPrefStringHint">Text Received From Shared-Preferences</string>
+    <string name="displayFileString">Text Received From File-system</string>
+    <string name="title_activity_file_openner">FileOpennerActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_shared_preference">SharedPreferenceActivity</string>
+    <string name="FNF">"File not found: "</string>
+    <string name="CANTOPEN">"Can not read  String details;        file: "</string>
+
+</resources>
