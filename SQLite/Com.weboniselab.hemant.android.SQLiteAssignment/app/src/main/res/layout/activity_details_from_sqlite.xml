@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/filler"
 
-    tools:context="com.example.webonise.comweboniselabhemantandroidsqliteassignment.DetailsFromSQLite">
+    tools:context="com.example.webonise.comweboniselabhemantandroidsqliteassignment.DetailsFromSQLiteActivity">
     <LinearLayout
        style="@style/filler"
         android:orientation="vertical">
@@ -13,7 +13,7 @@
 
     <TextView
         android:id="@+id/tv_d"
-        android:text="No - Input "
+        android:text="From Database ->  "
         style="@style/filler"/>
     </LinearLayout>
 

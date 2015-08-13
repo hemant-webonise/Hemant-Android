@@ -7,11 +7,11 @@
         style="@style/filler"
         android:id="@+id/et_name"
         android:hint="Name"
-        android:minHeight="50dp"/>
+        android:minHeight="@dimen/min_ht"/>
     <EditText
         style="@style/filler"
         android:id="@+id/et_age"
-        android:minHeight="50dp"
+        android:minHeight="@dimen/min_ht"
         android:hint="Age"
         android:inputType="number"
         android:layout_below="@+id/et_name"
