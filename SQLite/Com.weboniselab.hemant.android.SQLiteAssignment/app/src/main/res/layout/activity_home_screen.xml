@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/filler"
+    tools:context=".HomeScreen">
+
+    <EditText
+        style="@style/filler"
+        android:id="@+id/et_name"
+        android:hint="Name"
+        android:minHeight="50dp"/>
+    <EditText
+        style="@style/filler"
+        android:id="@+id/et_age"
+        android:minHeight="50dp"
+        android:hint="Age"
+        android:inputType="number"
+        android:layout_below="@+id/et_name"
+        />
+    <EditText
+        style="@style/filler"
+        android:id="@+id/et_height"
+        android:hint="Weight"
+        android:inputType="number"
+        android:layout_below="@+id/et_age"
+         />
+    <EditText
+        style="@style/filler"
+        android:id="@+id/et_weight"
+        android:hint="Height"
+        android:inputType="number"
+        android:layout_below="@+id/et_height"
+         />
+    <Button
+        style="@style/filler"
+        android:id="@+id/btn_Save"
+        android:layout_below="@+id/et_weight"
+        android:text="Save"
+        />
+    <Button
+        style="@style/filler"
+        android:id="@+id/btn_SendToDB"
+        android:layout_below="@+id/btn_Save"
+        android:text="View all"
+        />
+
+    <TextView
+        style="@style/filler"
+        android:id="@+id/tv_db"
+        android:text="no-updates-yet"
+        android:layout_below="@+id/btn_SendToDB"/>
+
+</RelativeLayout>

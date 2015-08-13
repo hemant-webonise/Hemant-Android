@@ -1,0 +1,20 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/filler"
+
+    tools:context="com.example.webonise.comweboniselabhemantandroidsqliteassignment.DetailsFromSQLite">
+    <LinearLayout
+       style="@style/filler"
+        android:orientation="vertical">
+    <TextView
+        android:text="@string/Title"
+        android:textSize="40dp"
+        style="@style/filler"/>
+
+    <TextView
+        android:id="@+id/tv_d"
+        android:text="No - Input "
+        style="@style/filler"/>
+    </LinearLayout>
+
+</ScrollView>
