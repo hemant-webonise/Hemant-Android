@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/filler"
+    tools:context="com.example.webonise.comweboniselabhemantandroidsharedpreferences.SharedPreferenceActivity">
+
+    <TextView
+        android:id="@+id/title_sp"
+        android:layout_margin="50dp"
+        style="@style/filler"
+        android:textSize="@dimen/title_sp"
+        android:text="Shared Preference"/>
+
+    <TextView
+        style="@style/filler"
+        android:id="@+id/SharedPref_input"
+        android:layout_alignBottom="@+id/title_sp"
+        android:text="No updates"
+        android:minHeight="@dimen/SpText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title_sp" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="title_sp">40sp</dimen>
+    <dimen name="SpText">200dp</dimen>
+    <dimen name="FileText">200dp</dimen>
+    <dimen name="title">40sp</dimen>
+</resources>

@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools
+    " style="@style/filler"
+    tools:context="com.example.webonise.comweboniselabhemantandroidsharedpreferences.FileOpennerActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_margin="50dp"
+        style="@style/filler"
+        android:textSize="@dimen/title"
+        android:text="File - System"/>
+    <TextView
+        style="@style/filler"
+        android:id="@+id/file_input"
+        android:text="No updates"
+        android:minHeight="@dimen/FileText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title" />
+
+</RelativeLayout>
