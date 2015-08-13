@@ -77,10 +77,9 @@ public class HomeScreen extends Activity implements View.OnClickListener {
             case R.id.btn_SP:
                 if (detailFilledCheck()) {
                     Intent SPDisplay = new Intent(HomeScreen.this, SharedPreferenceActivity.class);
-
                     SPDisplay.putExtra("mes", dataTransferUsingSharedPreferences());
-
                     startActivity(SPDisplay);
+
                 }
 
 
@@ -102,9 +101,10 @@ public class HomeScreen extends Activity implements View.OnClickListener {
 
         } else if (TextUtils.isEmpty(et_wt.getText().toString())) {
             et_wt.setError("Please fill Weight");
+            return false;
 
         }
-        return false;
+        return true;
 
 
     }
