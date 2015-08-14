@@ -4,47 +4,47 @@ package com.example.webonise.comweboniselabhemantandroidsqliteassignment;
  * Created by webonise on 13/8/15.
  */
 public class Details {
-    int Details_id;
-    String Details_name;
-    int Details_wt,Details_age,Details_ht;
+    int detailsId;
+    String detailsName;
+    int detailsWt, detailsAge, detailsHt;
 
-    public String getDetails_name() {
-        return Details_name;
+    public String getDetailsName() {
+        return detailsName;
     }
 
-    public void setDetails_name(String details_name) {
-        Details_name = details_name;
+    public void setDetailsName(String detailsName) {
+        this.detailsName = detailsName;
     }
 
-    public int getDetails_wt() {
-        return Details_wt;
+    public int getDetailsWt() {
+        return detailsWt;
     }
 
-    public void setDetails_wt(int details_wt) {
-        Details_wt = details_wt;
+    public void setDetailsWt(int detailsWt) {
+        this.detailsWt = detailsWt;
     }
 
-    public int getDetails_age() {
-        return Details_age;
+    public int getDetailsAge() {
+        return detailsAge;
     }
 
-    public void setDetails_age(int details_age) {
-        Details_age = details_age;
+    public void setDetailsAge(int detailsAge) {
+        this.detailsAge = detailsAge;
     }
 
-    public int getDetails_ht() {
-        return Details_ht;
+    public int getDetailsHt() {
+        return detailsHt;
     }
 
-    public void setDetails_ht(int details_ht) {
-        Details_ht = details_ht;
+    public void setDetailsHt(int detailsHt) {
+        this.detailsHt = detailsHt;
     }
 
-    public int getDetails_id() {
-        return Details_id;
+    public int getDetailsId() {
+        return detailsId;
     }
 
-    public void setDetails_id(int details_id) {
-        Details_id = details_id;
+    public void setDetailsId(int detailsId) {
+        this.detailsId = detailsId;
     }
 }

@@ -1,12 +1,8 @@
 package com.example.webonise.comweboniselabhemantandroidsqliteassignment;
 
 import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.List;
@@ -38,12 +34,12 @@ public class DetailsFromSQLiteActivity extends Activity {
         List<Details> details = handles.getAllDetails();
 
         for (Details det : details) {
-            String log = String.format(getString(R.string.passing_string_infromSQLite), det.getDetails_id(), det.getDetails_name(), det.getDetails_age(), det.getDetails_ht(), det.getDetails_wt());
+            String log = String.format(getString(R.string.passing_string_infromSQLite), det.getDetailsId(), det.getDetailsName(), det.getDetailsAge(), det.getDetailsHt(), det.getDetailsWt());
             // Writing Details to logContacts
             Log.d("Name: ", log);
 
             tv_d.append(log);
         }
-        return "Done parsing";
+        return getString(R.string.proccesComplete);
     }
 }

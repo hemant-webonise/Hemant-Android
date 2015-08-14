@@ -8,12 +8,17 @@
     <string name="Title">Details Stored in Data Base</string>
     <string name="toast_string_dbstrated">Data Saving started....</string>
     <string name="toast_reading">Reading all Details..</string>
-    <string name="da_string">[Id: %d, Name: %s, Age %d, Height  %d, Weight %d]\n</string>
+    <string name="da_string" formatted="false">[Id: %d, Name: %s, Age %d, Height  %d, Weight %d]\n</string>
     <string name="et_name_err">Please fill Name</string>
     <string name="et_age_err">Please fill Age</string>
     <string name="et_ht_err">Please fill Height</string>
     <string name="et_wt_err">Please fill Weight</string>
-    <string name="passing_string_infromSQLite">[Id: %d, Name: %s, Age %d, Height  %d, Weight %d]\n</string>
+    <string name="passing_string_infromSQLite" formatted="false">[Id: %d, Name: %s, Age %d, Height  %d, Weight %d]\n</string>
     <string name="reading_data">Reading all Details..</string>
+    <string name="proccesComplete">Done parsing</string>
+    <string name="doneParsing">Done parsing</string>
+    <string name="bridgePassed">m</string>
+    <string name="logKeyReading">"Reading: "</string>
+    <string name="logKeyname">"Name: "</string>
 
 </resources>

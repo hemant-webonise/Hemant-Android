@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,11 +23,11 @@ public class DataBaseHandler extends SQLiteOpenHelper {
     // Details table name
     private static final String TABLE_DETAILS = "Details";
     // Details Table Columns names
-    private static final String KEY_ID ="ID";
-    private static final String KEY_NAME ="Name";
-    private static final String KEY_AGE ="Age" ;
-    private static final String KEY_HT = "HT";
-    private static final String KEY_WT = "WT";
+    private static final String COLUMN_ID ="ID";
+    private static final String COLUMN_NAME ="Name";
+    private static final String COLUMN_AGE ="Age" ;
+    private static final String COLUMN_HEIGHT = "HT";
+    private static final String COLUMN_WEIGHT = "WT";
 
 
     public DataBaseHandler(Context context) {
@@ -37,28 +36,26 @@ public class DataBaseHandler extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String CREATE_DETAILS_TABLE = "CREATE TABLE " + TABLE_DETAILS + "(" + KEY_ID + " INTEGER PRIMARY KEY AUTO-INCREMENT, "
-                + KEY_NAME + " TEXT, " + KEY_AGE + " INTEGER ," + KEY_WT + " INTEGER, "
-                + KEY_HT + " INTEGER ) ";
+        String CREATE_DETAILS_TABLE = "CREATE TABLE " + TABLE_DETAILS + "(" + COLUMN_ID + " INTEGER PRIMARY KEY AUTO-INCREMENT, "
+                + COLUMN_NAME + " TEXT, " + COLUMN_AGE + " INTEGER ," + COLUMN_WEIGHT + " INTEGER, "
+                + COLUMN_HEIGHT + " INTEGER ) ";
         db.execSQL(CREATE_DETAILS_TABLE);
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int i, int i2) {
-        // Drop older table if existed
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_DETAILS);
-        // Create tables again
-        onCreate(db);
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i2) {
+
     }
+
 
     public void addDetails(Details details){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 
-        values.put(KEY_NAME, details.getDetails_name());
-        values.put(KEY_AGE, details.getDetails_age());
-        values.put(KEY_HT, details.getDetails_ht());
-        values.put(KEY_WT, details.getDetails_wt());
+        values.put(COLUMN_NAME, details.getDetailsName());
+        values.put(COLUMN_AGE, details.getDetailsAge());
+        values.put(COLUMN_HEIGHT, details.getDetailsHt());
+        values.put(COLUMN_WEIGHT, details.getDetailsWt());
         // Inserting Row
         db.insert(TABLE_DETAILS, null, values);
         db.close(); // Closing database connection
@@ -73,7 +70,6 @@ public class DataBaseHandler extends SQLiteOpenHelper {
     public List<Details> getAllDetails(){
         List<Details> DetailList = new ArrayList<Details>();
             try {
-
                 // Select All Query
                 String selectQuery = "SELECT * FROM " + TABLE_DETAILS;
 
@@ -84,23 +80,21 @@ public class DataBaseHandler extends SQLiteOpenHelper {
                 if (cursor.moveToFirst()) {
                     do {
                         Details details = new Details();
-                        details.setDetails_id(Integer.parseInt(cursor.getString(0)));
-                        details.setDetails_name(cursor.getString(1));
-                        details.setDetails_age(Integer.parseInt(cursor.getString(2)));
-                        details.setDetails_ht(Integer.parseInt(cursor.getString(3)));
-                        details.setDetails_wt(Integer.parseInt(cursor.getString(4)));
+                        details.setDetailsId(Integer.parseInt(cursor.getString(cursor.getColumnIndex(COLUMN_ID))));
+                        details.setDetailsName(cursor.getString(cursor.getColumnIndex(COLUMN_NAME)));
+                        details.setDetailsAge(Integer.parseInt(cursor.getString(2)));
+                        details.setDetailsHt(Integer.parseInt(cursor.getString(3)));
+                        details.setDetailsWt(Integer.parseInt(cursor.getString(4)));
                         // Adding contact to list
                         DetailList.add(details);
                     } while (cursor.moveToNext());
                 }
-
                 // return contact list
                 cursor.close();
                 db.close();
                 return DetailList;
             }   catch (Exception e) {
-                // TODO: handle exception
-                Log.e("all_Details", "" + e);
+
             }
         return DetailList;
     }
