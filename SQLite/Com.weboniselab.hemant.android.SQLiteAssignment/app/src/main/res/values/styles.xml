@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="Home" parent="Home.Base"></style>
+
+    <style name="Home.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/background_material_light</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimaryDark">@color/pink</item>
+        <item name="android:textColor">@color/pink</item>
+        <!--<item name="android:navigationBarColor">@color/pink</item>-->
+    </style>
+
+    <style name="filler">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>
