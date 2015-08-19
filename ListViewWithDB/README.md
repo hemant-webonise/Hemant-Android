@@ -8,4 +8,6 @@ In ListViewWithBaseAdapter
 I used Custom Adapter(PersonListAdapter) which extends BaseAdapter and itt expects a List instead of cursor Location so,
 I had to change the logic in DetailsDBAdapter to return me a Details List.
 
-While the use of clear button when we reset the whole activity we hqve to take care about back-button Logic(Not worked on it)
+While the use of clear button in DetailsActivity
+
+When we reset the whole activity we have to take care about back-button Logic(Not worked on it)
