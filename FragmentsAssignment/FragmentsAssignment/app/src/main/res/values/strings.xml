@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FragmentsAssignment</string>
+    <string name="hello_world">Welcome to the list</string>
+    <string name="action_settings">Settings</string>
+    <string name="hintName">Name</string>
+    <string name="hintAge">Age</string>
+    <string name="hintWeight">Wieght</string>
+    <string name="hintHeight">Height</string>
+    <string name="textSave">Save</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Name">Name</string>
+    <string name="Age">Age</string>
+    <string name="Delete">Delete</string>
+    <string name="formatedString">(%s)</string>
+    <string name="nameError">Please Enter your Name!</string>
+    <string name="ageError">Please Enter your Age!</string>
+    <string name="heightError">Please Enter your Hieght!</string>
+    <string name="weightError">Please Enter your Weight!</string>
+    <string name="btnClear">Clear</string>
+    <string name="Save">Save</string>
+
+
+</resources>
