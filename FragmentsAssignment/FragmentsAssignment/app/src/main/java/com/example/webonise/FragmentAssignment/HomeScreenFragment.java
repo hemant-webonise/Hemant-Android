@@ -65,8 +65,7 @@ public class HomeScreenFragment extends Fragment implements PersonListAdapter.Ca
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         SaveScreenFragment saveScreenFragment = new SaveScreenFragment();
         /*Add animation*/
-
-        fragmentTransaction.setCustomAnimations(R.anim.out_to_right, R.anim.out_to_left);
+        fragmentTransaction.setCustomAnimations(R.anim.in_from_right, R.anim.out_to_left,R.anim.in_from_left,R.anim.out_to_right);
         /*We initially added now we'll replace*/
         fragmentTransaction.replace(R.id.fragment_container, saveScreenFragment);
         fragmentTransaction.addToBackStack(null);

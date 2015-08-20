@@ -27,18 +27,18 @@ public class MainActivity extends FragmentActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
         int count = getFragmentManager().getBackStackEntryCount();
         if (count == 1) {
-            super.onBackPressed();
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             HomeScreenFragment homeScreenFragment = new HomeScreenFragment();
-//          fragmentTransaction.setCustomAnimations( R.anim.slide_out_right,R.anim.slide_in_left);
+           /* Animation reverse logic is done in HomeScreenFragments logic.*/
             fragmentTransaction.replace(R.id.fragment_container, homeScreenFragment);
             fragmentTransaction.commit();
+            super.onBackPressed();
         } else {
             getFragmentManager().popBackStack();
         }
+       super.onBackPressed();
     }
 }
