@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+        android:propertyName="x"
+        android:valueType="floatType"
+        android:valueFrom="1280"
+        android:valueTo="+1230"
+        android:duration="500"/>
+</set><!-- From: file:/home/webonise/AndroidStudioProjects/Delete1/app/src/main/res/anim/slide_out_right.xml -->
