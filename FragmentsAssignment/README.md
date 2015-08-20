@@ -13,5 +13,17 @@ Working on the Scenario-
 2. So now we have one Activity and Two Fragments - HomeScreenFragment and SaveScreenFragment and then all the other files are not changed except the ListAdapter.
 3. Fragments and Acvities behave differently to findViewById(); which wud be clear in comparision of both codes(This and LISTVIEWFINAL).
 
+Working on the backward Compactibility.
+
+1. Changed the import for Fragments used.
+2. And so similarly changed the imports of FragmentTransaction,FragmentManager
+3. Chage the extend of main class  to FragmentActivity and import - 
+
+   1. import android.support.v4.app.FragmentActivity;
+   2. import android.support.v4.app.FragmentManager;
+   3. import android.support.v4.app.FragmentTransaction;
+   
+4. Make use of getSupportFragmentManager() method.
+
 
 

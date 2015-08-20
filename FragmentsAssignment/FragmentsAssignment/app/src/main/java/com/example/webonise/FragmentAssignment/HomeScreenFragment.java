@@ -1,10 +1,12 @@
 package com.example.webonise.FragmentAssignment;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,7 +65,8 @@ public class HomeScreenFragment extends Fragment implements PersonListAdapter.Ca
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         SaveScreenFragment saveScreenFragment = new SaveScreenFragment();
         /*Add animation*/
-        fragmentTransaction.setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right);
+
+        fragmentTransaction.setCustomAnimations(R.anim.out_to_right, R.anim.out_to_left);
         /*We initially added now we'll replace*/
         fragmentTransaction.replace(R.id.fragment_container, saveScreenFragment);
         fragmentTransaction.addToBackStack(null);

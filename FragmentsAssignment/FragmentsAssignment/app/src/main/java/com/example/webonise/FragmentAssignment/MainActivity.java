@@ -1,18 +1,22 @@
 package com.example.webonise.FragmentAssignment;
 
 import android.app.Activity;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+;
+
+
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        FragmentManager fragmentManager = getFragmentManager();
+        FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         HomeScreenFragment homeScreenFragment = new HomeScreenFragment();
 
@@ -27,11 +31,11 @@ public class MainActivity extends Activity {
         int count = getFragmentManager().getBackStackEntryCount();
         if (count == 1) {
             super.onBackPressed();
-            FragmentManager fragmentManager = getFragmentManager();
+            FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             HomeScreenFragment homeScreenFragment = new HomeScreenFragment();
 //          fragmentTransaction.setCustomAnimations( R.anim.slide_out_right,R.anim.slide_in_left);
-            fragmentTransaction.add(R.id.fragment_container, homeScreenFragment);
+            fragmentTransaction.replace(R.id.fragment_container, homeScreenFragment);
             fragmentTransaction.commit();
         } else {
             getFragmentManager().popBackStack();
