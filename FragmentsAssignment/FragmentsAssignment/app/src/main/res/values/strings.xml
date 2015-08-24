@@ -19,7 +19,10 @@
     <string name="heightError">Please Enter your Hieght!</string>
     <string name="weightError">Please Enter your Weight!</string>
     <string name="btnClear">Clear</string>
-    <string name="Save">Save</string>
+    <string name="Add">Add</string>
+    <string name="weight">Weight</string>
+    <string name="formattedHeight">Height : </string>
+    <string name="formattedWeight">Weight : %s</string>
 
 
 </resources>

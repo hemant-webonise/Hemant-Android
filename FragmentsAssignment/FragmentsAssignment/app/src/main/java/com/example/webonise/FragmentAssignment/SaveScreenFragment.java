@@ -27,6 +27,11 @@ public class SaveScreenFragment extends Fragment implements PersonListAdapter.Ca
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_save_screen, container, false);
+        init(view);
+        return view;
+    }
+
+    private void init(View view) {
         etName = (EditText) view.findViewById(R.id.etName);
         etAge = (EditText) view.findViewById(R.id.etAge);
         etHeight = (EditText) view.findViewById(R.id.etHeight);
@@ -35,7 +40,6 @@ public class SaveScreenFragment extends Fragment implements PersonListAdapter.Ca
         btnSave.setOnClickListener(this);
         btnClear = (Button) view.findViewById(R.id.btnClear);
         btnClear.setOnClickListener(this);
-        return view;
     }
 
     @Override
@@ -43,7 +47,10 @@ public class SaveScreenFragment extends Fragment implements PersonListAdapter.Ca
         super.onActivityCreated(savedInstanceState);
 
     }
-
+    /*Function to check the empty-ness of the EditText - along with whitespaces conditions taken care of*/
+    private boolean isEmpty(EditText etText) {
+        return etText.getText().toString().trim().length() == 0;
+    }
 
     @Override
     public void onClick(View view) {
@@ -54,28 +61,8 @@ public class SaveScreenFragment extends Fragment implements PersonListAdapter.Ca
                 String age = etAge.getText().toString();
                 String height = etHeight.getText().toString();
                 String weight = etWeight.getText().toString();
-
-                if (TextUtils.isEmpty(name)) {
-                    etName.setError(getString(R.string.nameError));
-                } else if (TextUtils.isEmpty(etAge.getText().toString())) {
-                    etAge.setError(getString(R.string.ageError));
-                } else if (TextUtils.isEmpty(height)) {
-                    etHeight.setError(getString(R.string.heightError));
-                } else if (TextUtils.isEmpty(weight)) {
-                    etWeight.setError(getString(R.string.weightError));
-                } else {
-                    DetailsDBAdapter personDatabaseHelper = new DetailsDBAdapter(getActivity());
-                    Details personDetails = new Details();
-                    personDetails.setName(name);
-                    personDetails.setHeight(height);
-                    personDetails.setWeight(weight);
-                    personDetails.setAge(age);
-                    personDatabaseHelper.createDetails(personDetails);
-                    Toast.makeText(getActivity(), Constants.TOAST_DB_UPDATE, Toast.LENGTH_LONG).show();
-                    personDatabaseHelper.close();
-                    HomeScreenFragment fragment = new HomeScreenFragment();
-                    fragment.onUpgrade();
-                }
+                validateInputs();
+                UpdateDetails(name, age, height, weight);
                 break;
             case R.id.btnClear:
                   /*First Approach*/
@@ -85,6 +72,32 @@ public class SaveScreenFragment extends Fragment implements PersonListAdapter.Ca
                 etWeight.getText().clear();
                 break;
         }
+    }
+
+    private void validateInputs() {
+        if (isEmpty(etName)) {
+            etName.setError(getString(R.string.nameError));
+        } else if (isEmpty(etAge)) {
+            etAge.setError(getString(R.string.ageError));
+        } else if (isEmpty(etHeight)) {
+            etHeight.setError(getString(R.string.heightError));
+        } else if (isEmpty(etWeight)) {
+            etWeight.setError(getString(R.string.weightError));
+        }
+    }
+
+    private void UpdateDetails(String name, String age, String height, String weight) {
+        DetailsDBAdapter personDatabaseHelper = new DetailsDBAdapter(getActivity());
+        Details personDetails = new Details();
+        personDetails.setName(name);
+        personDetails.setHeight(height);
+        personDetails.setWeight(weight);
+        personDetails.setAge(age);
+        personDatabaseHelper.createDetails(personDetails);
+        Toast.makeText(getActivity(), Constants.TOAST_DB_UPDATE, Toast.LENGTH_LONG).show();
+        personDatabaseHelper.close();
+        HomeScreenFragment fragment = new HomeScreenFragment();
+        fragment.onUpgrade();
     }
 
     @Override
