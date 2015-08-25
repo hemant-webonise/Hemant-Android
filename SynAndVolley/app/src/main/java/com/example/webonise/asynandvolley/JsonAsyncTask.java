@@ -14,7 +14,6 @@ import org.json.JSONObject;
  */
 public class JsonAsyncTask extends AsyncTask<String,String,JSONObject> {
     public static final String NAME = "name";
-    public static final String CONTACTS = "contacts";
     Activity activity;
 
     /*Constructor*/
@@ -41,8 +40,6 @@ public class JsonAsyncTask extends AsyncTask<String,String,JSONObject> {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
-
     }
 
     private void getViewListView(String[] listData) {
@@ -76,7 +73,7 @@ public class JsonAsyncTask extends AsyncTask<String,String,JSONObject> {
         }
 
         public GetList invoke() throws JSONException {
-            jsonArray = jsonObject.getJSONArray(CONTACTS);
+            jsonArray = jsonObject.getJSONArray(Constant.CONTACT);
             data = new String[jsonArray.length()];
             return this;
         }

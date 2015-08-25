@@ -29,9 +29,11 @@ public class JsonParser {
     }
 
     public JSONObject getJSON(String url) {
-
         try {
-
+            /*can use HttpsURLConnection instead of DefaultHttpClient.
+             Also NameValuePair is deprecated.
+             use Uri.Builder and appendQueryParameter to send request parameters.
+             */
             DefaultHttpClient httpClient = new DefaultHttpClient();
             HttpGet httpGet = new HttpGet(url);
             HttpResponse httpResponse = httpClient.execute(httpGet);

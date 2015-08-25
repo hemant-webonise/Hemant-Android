@@ -5,4 +5,5 @@ package com.example.webonise.asynandvolley;
  */
 public class Constant {
     public static final String URL = "http://api.androidhive.info/contacts";
+    public static final String CONTACT = "contacts";
 }
