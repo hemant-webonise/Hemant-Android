@@ -36,45 +36,57 @@ public class DetailsActivity extends Activity implements View.OnClickListener {
         btnClear.setOnClickListener(this);
     }
 
+
+    /*Function to check the empty-ness of the EditText - along with whitespaces conditions taken care of*/
+    private boolean isEmpty(EditText etText) {
+        return etText.getText().toString().trim().length() == 0;
+    }
+
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-
             case R.id.btnSave:
-                if (TextUtils.isEmpty(etName.getText().toString())) {
-                    etName.setError(getString(R.string.et_name_err));
-                } else if (TextUtils.isEmpty((etAge.getText().toString()))) {
-                    etAge.setError(getString(R.string.et_age_err));
-                } else if (TextUtils.isEmpty((etHeight.getText().toString()))) {
-                    etHeight.setError(getString(R.string.et_ht_err));
-                } else if (TextUtils.isEmpty((etWeight.getText().toString()))) {
-                    etWeight.setError(getString(R.string.et_wt_err));
-                } else {
-                    DetailsDBAdapter personDatabaseHelper = new DetailsDBAdapter(this);
-                    Details personDetails = new Details();
-                    personDetails.setName(etName.getText().toString());
-                    personDetails.setHeight(etHeight.getText().toString());
-                    personDetails.setWeight(etWeight.getText().toString());
-                    personDetails.setAge(etWeight.getText().toString());
-                    personDatabaseHelper.createDetails(personDetails);
-                    personDatabaseHelper.close();
-                    Toast.makeText(getApplicationContext(), getString(R.string.successDatabase), Toast.LENGTH_LONG).show();
-                    break;
-                }
+                validateDetails();
+                updateDetails();
+                break;
             case R.id.btnClear:
                   /*First Approach*/
 
-//                etName.getText().clear();
-//                etAge.getText().clear();
-//                etHeight.getText().clear();
-//                etWeight.getText().clear();
+                etName.getText().clear();
+                etAge.getText().clear();
+                etHeight.getText().clear();
+                etWeight.getText().clear();
 
                 /*Better Solution but read about savedStatus of activity */
-                if (view == btnClear) {
+                /*if (view == btnClear) {
                     startActivity(new Intent(DetailsActivity.this, DetailsActivity.class));
-                }
+                }*/
                 /*Creating a ViewGroup is another approach*/
 
         }
+    }
+
+    private void validateDetails() {
+        if (isEmpty(etName)) {
+            etName.setError(getString(R.string.et_name_err));
+        } else if (isEmpty(etAge)) {
+            etAge.setError(getString(R.string.et_age_err));
+        } else if (isEmpty(etHeight)) {
+            etHeight.setError(getString(R.string.et_ht_err));
+        } else if (isEmpty(etWeight)) {
+            etWeight.setError(getString(R.string.et_wt_err));
+        }
+    }
+
+    private void updateDetails() {
+        DetailsDBAdapter personDatabaseHelper = new DetailsDBAdapter(this);
+        Details personDetails = new Details();
+        personDetails.setName(etName.getText().toString());
+        personDetails.setHeight(etHeight.getText().toString());
+        personDetails.setWeight(etWeight.getText().toString());
+        personDetails.setAge(etWeight.getText().toString());
+        personDatabaseHelper.createDetails(personDetails);
+        personDatabaseHelper.close();
+        Toast.makeText(getApplicationContext(), getString(R.string.successDatabase), Toast.LENGTH_LONG).show();
     }
 }

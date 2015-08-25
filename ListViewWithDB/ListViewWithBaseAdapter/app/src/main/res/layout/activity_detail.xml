@@ -16,6 +16,7 @@
         style="@style/filler"
         android:id="@+id/etName"
         android:hint="@string/hintName"
+        android:inputType="textCapWords|textCapSentences"
         />
     <EditText
         style="@style/filler"
