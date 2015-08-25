@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ListViewAndSQLite</string>
+    <string name="hello_world">In Details!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home_screen">HomeScreenActivity</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_android_list_view_cursor_adaptor">AndroidListViewCursorAdaptorActivity</string>
+    <string name="some_text">  Some Persons Details already Filled ! </string>
+    <string name="some_hint">  Type here to filter on basis of age </string>
+    <string name="et_name_err">Please Enter Your Name!</string>
+    <string name="et_age_err">Please Enter Your Age!</string>
+    <string name="et_ht_err">Please Enter Your Height!</string>
+    <string name="et_wt_err">Please Enter Your Weight!</string>
+    <string name="Clicked">Clicked</string>
+    <string name="Defualt">Default</string>
+    <string name="DefualtAge">(age)</string>
+    <string name="DefualtHeight">Height</string>
+    <string name="DefualtWeight">Weight</string>
+    <string name="Name">Name</string>
+    <string name="Age">(Age)</string>
+    <string name="Delete">Delete</string>
+    <string name="hintName">Name</string>
+    <string name="hintAge">Age</string>
+    <string name="hintWeight">Weight</string>
+    <string name="hintHeight">Height</string>
+    <string name="textSave">Save</string>
+    <string name="textRefresh">Refresh all data</string>
+    <string name="DetailsString" >(%s)</string>
+    <string name="deletor">Deletor-clicked</string>
+    <string name="longPressed">Long pressed</string>
+
+</resources>
+

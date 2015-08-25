@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.webonise.listviewandsqlite.DetailsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_world"
+        android:gravity="center"
+        />
+    <EditText
+        style="@style/filler"
+        android:id="@+id/etName"
+        android:hint="@string/hintName"
+        android:inputType="textCapWords|textCapSentences"
+        />
+    <EditText
+        style="@style/filler"
+        android:id="@+id/etAge"
+        android:hint="@string/hintAge"
+        android:inputType="number"
+        android:layout_below="@+id/etName"
+        />
+    <EditText
+        style="@style/filler"
+        android:id="@+id/etHeight"
+        android:hint="@string/hintHeight"
+        android:inputType="number"
+        android:layout_below="@+id/etAge"
+        />
+    <EditText
+        style="@style/filler"
+        android:id="@+id/etWeight"
+        android:hint="@string/hintWeight"
+        android:inputType="number"
+        android:layout_below="@+id/etHeight"
+        />
+    <Button
+        style="@style/filler"
+        android:id="@+id/btnSave"
+        android:layout_below="@+id/etWeight"
+        android:text="@string/textSave"
+        />
+    <Button
+        style="@style/filler"
+        android:id="@+id/btnClear"
+        android:layout_below="@+id/btnSave"
+        android:text="@string/btnClear"
+        />
+
+</RelativeLayout>
